@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-const fs = require("fs");
 const apiRoutes = require("./routes/apiRoutes");
 
 // Helper method for generating unique ids
@@ -18,8 +17,6 @@ app.use(express.static("public"));
 
 app.use("/api", apiRoutes);
 
-// GET Route for feedback page
-
 // POST Route for submitting feedback
 app.get("/notes", (req, res) =>
     res.sendFile(path.join(__dirname, "/public/notes.html"))
@@ -33,9 +30,3 @@ app.get("/notes", (req, res) =>
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
-// const util = require('util');
-// const { readFromFile, readAndAppend } = require('./helpers/fsUtils');
-// const routes = require('../routes')
-
-// require('./Develop/routes/apiRoutes')(app);
-// require('./Develop/routes/htmlRoutes')(app);
