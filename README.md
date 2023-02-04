@@ -3,7 +3,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  A Note Taker App
+  Express.js Challenge: A Note Taker App
 
 ## Acceptance Criteria
 
