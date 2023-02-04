@@ -1,7 +1,8 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const apiRoutes = require("./routes/apiRoutes");
-
+//const htmlRoutes = require("./routes/htmlRoutes");
 // Helper method for generating unique ids
 
 
@@ -16,6 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.use("/api", apiRoutes);
+//app.use("/html", htmlRoutes);
+
+
 
 // POST Route for submitting feedback
 app.get("/notes", (req, res) =>

@@ -4,13 +4,18 @@
         "text": "Test text"
     },
     {
-        "title": "Test",
-        "text": "testing",
-        "id": "9d26ab64-82f1-493b-95be-ce0b47b73bc9"
+        "title": "Yesterday's Notes",
+        "text": "Review notes from yesterday's orders\nFollow up as necessary",
+        "id": "b714b99c-f1c3-4282-93cd-bd3bba35e460"
     },
     {
-        "title": "Work",
-        "text": "time to work",
-        "id": "83d803e6-4602-4c07-a65b-da84b2ce3568"
+        "title": "Phone Calls",
+        "text": "Reach out to potential customers",
+        "id": "3ca3bbf2-e1aa-4858-a4cb-f25983d4b0e8"
+    },
+    {
+        "title": "Order Supplies",
+        "text": "Put in order for needed supplies",
+        "id": "dc0ba1f3-652d-4ed2-a6a7-7fd9eb3702de"
     }
 ]
