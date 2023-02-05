@@ -1,6 +1,6 @@
 # JotItDown
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
   ## Description
   Express.js Challenge: A Note Taker App
@@ -59,4 +59,4 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   - Email link: ampatte717@gmail.com
 
   ## License
-    This project is covered under the MIT license.(https://choosealicense.com/licenses/mit/)
+    This project is covered under the ISC license.(https://www.isc.org/licenses/)
