@@ -5,7 +5,7 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 uuidv4();
 
-const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend } = require("../helpers/fsUtils");
 
 //* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
 router.get('/notes', (req, res) => 
