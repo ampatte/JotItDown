@@ -5,7 +5,7 @@ const apiRoutes = require("./Develop/routes/apiRoutes");
 //const htmlRoutes = require("./routes/htmlRoutes");
 // Helper method for generating unique ids
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 // Middleware for parsing JSON and urlencoded form data
