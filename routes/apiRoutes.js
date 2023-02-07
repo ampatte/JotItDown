@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const fs = require('fs');
-
+const path = require('path');
 // Helper method for generating unique ids
 const { v4: uuidv4 } = require('uuid');
 uuidv4();
 
-const { readFromFile, readAndAppend } = require("../helpers/fsUtils");
+const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 
 //* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
 router.get('/notes', (req, res) => 
@@ -27,14 +27,14 @@ router.post('/notes', (req, res) => {
   id: uuidv4(),
   };
   
-  readAndAppend(newNote, './db/db.json');
+  readAndAppend(newNote, '/db/db.json');
   res.json(`Note added successfully 🚀`);
 } else {
   res.err('Error in saving note');
 }});
 
 //DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-router.delete('/notes/:id', async (req, res) => {
+router.delete('notes/:id', async (req, res) => {
   readFromFile('*', './db/db.json');
   console.info(`${req.method} request received to delete a note`);
   try {
